@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Website của Hoàng</title>
+    <!-- Required meta tags -->
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%# <link rel="stylesheet" href="../css/top.css"> %>
+         <%= stylesheet_link_tag 'top', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=vietnamese" rel="stylesheet">
+     
+     <%# <link rel="stylesheet" href="../css/menuhk.css"> %>
+     <%# <link rel="stylesheet" href="../css/content.css">
+     <link rel="stylesheet" href="../css/timkiemck.css">
+     <link rel="stylesheet" href="../css/content1.css">
+     <link rel="stylesheet" href="../css/lietkrtheotg.css"> %>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <%# <link rel="stylesheet" type="text/css" href="../css/side.css"> %>
+
+     <%= stylesheet_link_tag 'side', media: 'all', 'data-turbolinks-track': 'reload' %>
+   
+    <%# <link rel="stylesheet" href="../css/moihk.css"> %>
+
+     <%= stylesheet_link_tag 'moihk', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- <link rel="stylesheet" href="../css/cuoitranghk.css"> -->
+    <%# <link rel="stylesheet" href="../css/danhdau.css">
+    <link rel="stylesheet" href="../css/demnam.css">
+    <link rel="stylesheet" href="../css/back-on-top.css"> %>
+
+    <%= stylesheet_link_tag 'danhdau', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'demnam', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'back-on-top', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>  
+     <%= stylesheet_link_tag 'menuhk', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag 'content', media: 'all', 'data-turbolinks-track': 'reload' %>
+       <%= stylesheet_link_tag 'timkiemck', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag 'content1', media: 'all', 'data-turbolinks-track': 'reload' %>
+         <%= stylesheet_link_tag 'lietkrtheotg', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    
+</head>
+  <body onload="startTime(),start(),chaomung()" >
+      
+            <section class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                                <div class="logo">
+                                        <a href="">Truyện H-T</a>
+                                </div>
+                        </div>
+                        <div class="col-md-5">
+                                <div class="tim-top">
+                                        <input type="text" class="n" placeholder="Nhập tên Truyện">
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-2 ">
+                                <button id="nut1"  style="width:auto;">Login</button>
+
+                       
+                        </div>                    
+                        <div class="col-md-2 ">
+                                <button id="nut2" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+                              
+                               
+                         </div>
+                         <!-- dang nhap -->
+            
+                         <div id="id01" class="modal">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <form class="modal-content" action="/action_page.php">
+                                  <div class="container">
+                                    <h1>Sign Up</h1>
+                                    <p>Please fill in this form to create an account.</p>
+                                    <hr>
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+                              
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                              
+                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                    
+                                    <label>
+                                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                    </label>
+                              
+                                    <p>By creating an account you agree to our <a href="truyen.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                              
+                                    <div class="clearfix">
+                                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                      <button type="submit" class="signupbtn">Sign Up</button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                              
+                              <script>
+                              // Get the modal
+                              var modal = document.getElementById('id01');
+                              
+                              // When the user clicks anywhere outside of the modal, close it
+                              window.onclick = function(event) {
+                                if (event.target == modal) {
+                                  modal.style.display = "none";
+                                }
+                              }
+                              </script>
+                              <!-- Dang ky -->
+                              <div id="id01" class="modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <form class="modal-content" action="/action_page.php">
+                                      <div class="container">
+                                        <h1>Sign Up</h1>
+                                        <p>Please fill in this form to create an account.</p>
+                                        <hr>
+                                        <label for="email"><b>Email</b></label>
+                                        <input type="text" placeholder="Enter Email" name="email" required>
+                                  
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                  
+                                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                        
+                                        <label>
+                                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                        </label>
+                                  
+                                        <p>By creating an account you agree to our <a href="truyen.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                                  
+                                        <div class="clearfix">
+                                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                          <button type="submit" class="signupbtn">Sign Up</button>
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  
+                                  <script>
+                                  // Get the modal
+                                  var modal = document.getElementById('id01');
+                                  
+                                  // When the user clicks anywhere outside of the modal, close it
+                                  window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                      modal.style.display = "none";
+                                    }
+                                  }
+                                  </script>
+                                  
+                              
+                         
+     
+            </section>
+           <section class="menu">
+               <div class="container">
+                   <div class="row">
+                       
+                       <div class="col-md-2">
+                           <ul class="muc">
+                                <li><a href="truyen.html" id=""> Truyện VIP</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-2">
+                           <ul class="muc">
+                                <li><a href="truyen.html" id="">Mới Cập Nhật</a> </li>
+                           </ul>
+                       </div>
+                       <div class="col-md-2">
+                           <ul class="muc">
+                                <li><a href="truyen.html" id=""> Truyện Mới</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-2">
+                           <ul class="muc1">
+                                <li><a href="gioithieu.html" id=""> Giới Thiệu</a></li>
+                           </ul>
+                       </div>
+                       <div class="col-md-2">
+                           <ul class="muc1">
+                                <li><a href="truyen.html" id="">Truyện Đề Cử</a> </li>
+                           </ul>
+                       </div>
+                       
+                      
+                       <div class="col-md-2">
+                           <ul class="muc">
+                            <li>
+                                <div class="muc2">
+                                <a href="" class="layer1">Thể Loại</a>
+                                
+                            <div class="layer2">
+                                <ul >
+                                        <li><a href="truyen.html">Tiên Hiệp</a></li>
+                                        <li><a href="truyen.html">Kiếm Hiệp</a></li>
+                                        <li><a href="truyen.html">Tiên Hiệp</a></li>
+                                        <li><a href="truyen.html">Hiện Đại</a></li>
+                                        <li><a href="truyen.html">Huyền Ảo</a></li>
+                                        <li><a href="truyen.html">Ngôn Tình</a></li>
+                                        <li><a href="truyen.html">Quân Sự</a></li>
+                                        <li><a href="truyen.html">Lịch Sử</a></li>
+                                        <li><a href="truyen.html">Xuyên Không</a></li>
+                                        <li><a href="truyen.html">Truyện Cổ Tích</a></li>
+                                </ul> 
+                                    
+                            </div>
+                        </div>
+                        </li>
+                           </ul>
+                       </div>
+                       
+                       
+                   </div>
+                   
+               </div>
+           </section>
+           <section class="side">
+                <div class="container">
+                        <div class="row">
+                        <div class="col-md-4">
+                        <div class="trai">
+                            <h2 class="docnhieu">Đọc Nhiều </h2>
+                            <ul>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Ta Không Muốn Nghịch Thiên</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Lưu Manh Thần Châm &emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Sư Đệ Của Ta Là Cửu Gia&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Lăng Kiếm Đế Tôn &emsp;&emsp;&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Ta Ở Tam Giới Làm Lão Sư&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Thâu Hương Cao Thủ&emsp;&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Cửu Tuyền Quy Lai&emsp;&emsp;&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Thế giới game thủ&emsp;&emsp;&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                
+                
+                                
+                            </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                        <div class="giua">
+                            <div id="carouselId" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselId" data-slide-to="1"></li>
+                                    <li data-target="#carouselId" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <a href="truyen.html"> <img src="../anh/janna_champthumb.jpeg" alt=""></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                            <a href="truyen.html"><img src="../anh/Ahri_ChampThumb.jpeg" alt=""></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                            <a href="truyen.html"><img src="../anh/annie_champthumb.jpeg" alt=""></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="time">
+                            <div class="h"> <b>Giờ:</b>  </div>
+                            <div id="gio"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="time">
+                          <div class="m"> <b>Phút:</b> </div>
+                            <div id="phut"></div>
+                        </div>
+                        </div>
+                       <div class="col-md-4">
+                           <div class="time">
+                          <div class="s"> <b>Giây:</b></div>
+
+                        <div id="giay"></div>
+                    </div>
+                       </div>
+                       <div class="col-md-4">
+                           <div class="time">
+                          <div class="s"> <b>Ngày:</b></div>
+
+                        <div id="ngay"></div>
+                    </div>
+                       </div>
+                       <div class="col-md-4">
+                           <div class="time">
+                          <div class="s"> <b>Tháng:</b></div>
+
+                        <div id="thang"></div>
+                    </div>
+                       </div>
+                       <div class="col-md-4">
+                           <div class="time">
+                          <div class="s"> <b>Năm:</b></div>
+
+                        <div id="nam"></div>
+                    </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="phai">
+                            <h2 class="moinhat">Mới Nhất</h2>
+                            <ul>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html"> Cuồng Huyết Ma Thiên&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Tuyệt Đỉnh Đan Tôn&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Hệ Thống Game Tại Dị Giới</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Niệm Tiên Quyết&nbsp;&emsp;&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Sư Đệ Của Ta Là Cửu Gia&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Long Mạch Võ Thần&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Cửu Long Trại Thành&emsp;&emsp;&ensp;</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="sao">
+                                        <div class="sao1"><img src="../anh/star.png" alt=""></div>
+                                        <div class="chu"> <a href="truyen.html">Ý Trời&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+           </section>
+           <section class="timkiem">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-2">
+                            <div class="nut">
+                       
+                                    <button type="button" class="btn btn-primary" id="nut">Tìm Kiếm</button>
+                                  </div>
+                       </div>
+                       <div class="col-md-2">
+                        <div class="tim">
+                            <select name="" id="tim">
+                                <option value="">Thể Loại</option>
+                                <option value="">Kiếm Hiệp</option>
+                                <option value="">Huyền Huyễn</option>
+                                <option value="">Ngôn Tình</option>
+                                <option value="">Tiên Hiệp</option>
+                                <option value="">Ngôn TÌnh</option>
+                                <option value="">Cung Đấu</option>
+                                <option value="">Phiêu Lưu</option>
+                            </select>
+                            </div>
+                       </div>
+                       <div class="col-md-2">
+                           <div class="tim">
+                            <select name="" id="tien">
+                                <option value="">Trả Phí</option>
+                                <option value="">Miễn Phí</option>
+                            </select>
+                           </div>
+                       </div>   
+                    <div class="col-md-2">
+                           <div class="tim">
+                            <select name="" id="thoigian">
+                                <option value="">Mới Đăng</option>
+                                <option value="">Lâu Rồi(Trên 1 năm)</option>
+                            </select>
+                           </div>
+                       </div>
+                       <div class="col-md-2">
+                           <div class="tim">
+                                <select id="quocgia">
+                                        <option value="">Trung Quốc</option>
+                                        <option value="">Mỹ</option>
+                                        <option value="">Việt Nam</option>
+                                    </select>
+
+                           </div>
+                       </div>
+                       <div class="col-md-2">
+                           <div class="tim">
+                               <select name="" id="tacgia">
+                                   <option value="">Tác giả</option>
+                                   <option value="" >Nhật Hoàng </option>
+                                   <option value=""> Như Thiên </option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+             
+
+           </section>
+           <section class="tieude">
+               <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                            <div class="decu">Đề Cử</div>
+                           
+
+                      </div>
+                       
+                   </div>
+               </div>
+           </section>
+           <section class="noidung">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-8">
+                           <div class="col-md-6">
+                                <div class="chinh">
+                       
+                                        <div class="trai1">
+                                            <a href="truyen.html"><img class="anh" src="../anh/cover_250x350 (2).jpg" alt=""></a> 
+                                        </div>
+                                        <div class="phai1">
+                                            <a class="tentr" href="truyen.html">Ngạo Thế Đan Thần (Dịch)</a>
+                                            <a href="tacgia.html" class="tentg">Tịch Tiểu Tặc</a>
+                                            <div class="thongtin">
+                                                <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                            <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                            </div>
+                                            
+                                               
+                                                <p class="tr">Truyện càng đọc càng lôi cuốn, nhiều lúc cười không nhặt được mồm, đọc dễ bị lôi cuốn ở cảnh đối thoại mập mờ với các nhân vật nữ...</p>
+                                            
+                                           
+                                        </div>
+                                    
+                                  
+                                </div>
+
+                           </div>
+                           <div class="col-md-6">
+                                <div class="chinh">
+                                        <div class="trai1">
+                                                <a href="truyen.html"> <img class="anh" src="../anh/cover_250x350 (2).jpg" alt=""></a>
+                                        </div>
+                                        <div class="phai1">
+                                            <a class="tentr" href="truyen.html">Ta Là Chí Tôn (Dịch)</a>
+                                            <a href="tacgia.html" class="tentg">Phong Lăng Thiên Hạ </a>
+                                            <div class="thongtin">
+                                                <span class="sochu">1,551,220 <span class="tru">Chữ</span> </span>
+                                            <span class="sochu1">100,593 <span class="tru1">Đọc</span> </span>
+                                            </div>
+                                            
+                                               
+                                                <p class="tr">Kinh thiên trí mưu, đạp phá quốc cừu gia hận. Thiết cốt nhu tràng, diễn dịch ái hận tình cừu. Tuyệt thế thần công, đồ tẫn nhân gian bất bình...</p>
+                                            
+                                           
+                                        </div>
+                                    
+                                  
+                                </div>
+                           </div>
+                           <div class="col-md-6">
+                            <div class="chinh">
+                                    <div class="trai1">
+                                            <a href="truyen.html"> <img class="anh" src="../anh/cover_250x350 (2).jpg" alt=""></a>
+                                    </div>
+                                    <div class="phai1">
+                                        <a class="tentr" href="truyen.html">Trọng Sinh Chi Ma Giáo Giáo Chủ (Dịch)</a>
+                                        <a href="tacgia.html" class="tentg">Phong Thất Nguyệt</a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Gặp chuyện bất ngờ mà mất mạng, Sở Hưu phát hiện không ngờ mình lại xuyên việt vào trong thế giới trò chơi , thành trùm phản diện phần ba của trò chơi...</p>
+                                        
+                                       
+                                    </div>
+                                
+                              
+                            </div>
+                           </div>
+                            <div class="col-md-6">
+                                    <div class="chinh">
+                                            <div class="trai1">
+                                                    <a href="truyen.html"> <img class="anh" src="../anh/cover_250x350 (2).jpg" alt=""></a>
+                                            </div>
+                                            <div class="phai1">
+                                                <a class="tentr" href="truyen.html">Xuyên Việt Bắt Đầu Từ Nuôi Rồng (Bản Dịch)</a>
+                                                <a href="tacgia.html" class="tentg">Ngã Đích Bì Tạp Khâu</a>
+                                                <div class="thongtin">
+                                                    <span class="sochu">651,220 <span class="tru">Chữ</span> </span>
+                                                <span class="sochu1">90,593 <span class="tru1">Đọc</span> </span>
+                                                </div>
+                                                
+                                                   
+                                                    <p class="tr">Trước khi thức tỉnh võ hồn, Long Hạo đạt được không gian thần bí, có thể ở bên trong nuôi Long tộc, mà lại nuôi Long tộc, còn có thể cường hóa võ hồn ...</p>
+                                                
+                                               
+                                            </div>
+                                        
+                                      
+                                    </div>
+                           
+                       
+                            </div>
+                            <div class="col-md-6">
+                        <div class="chinh">
+                                <div class="trai1">
+                                        <a href="truyen.html"><img class="anh" src="../anh/cover_250x350 (2).jpg" alt=""></a>
+                                </div>
+                                <div class="phai1">
+                                    <a class="tentr" href="truyen.html">Trọng Sinh Chi Ma Giáo Giáo Chủ (Dịch)</a>
+                                    <a href="tacgia.html" class="tentg">Phong Thất Nguyệt</a>
+                                    <div class="thongtin">
+                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                    </div>
+                                    
+                                       
+                                        <p class="tr">Gặp chuyện bất ngờ mà mất mạng, Sở Hưu phát hiện không ngờ mình lại xuyên việt vào trong thế giới trò chơi , thành trùm phản diện phần ba của trò chơi...</p>
+                                    
+                                   
+                                </div>
+                            
+                          
+                        </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="chinh">
+                                        <div class="trai1">
+                                                <a href="truyen.html"> <img class="anh" src="../anh/cover_250x350 (2).jpg" alt=""></a>
+                                        </div>
+                                        <div class="phai1">
+                                            <a class="tentr" href="truyen.html">Xuyên Việt Bắt Đầu Từ Nuôi Rồng (Bản Dịch)</a>
+                                            <a href="tacgia.html" class="tentg">Ngã Đích Bì Tạp Khâu</a>
+                                            <div class="thongtin">
+                                                <span class="sochu">651,220 <span class="tru">Chữ</span> </span>
+                                            <span class="sochu1">90,593 <span class="tru1">Đọc</span> </span>
+                                            </div>
+                                            
+                                               
+                                                <p class="tr">Trước khi thức tỉnh võ hồn, Long Hạo đạt được không gian thần bí, có thể ở bên trong nuôi Long tộc, mà lại nuôi Long tộc, còn có thể cường hóa võ hồn ...</p>
+                                            
+                                           
+                                        </div>
+                                    
+                                  
+                                </div>
+                            </div>  
+                       </div>      
+                       
+                      
+                       <div class="col-md-4">
+                           <div class="col-md-12">
+                               
+                           <div class="tieude">
+                                <h2>Truyện Đã Đánh Dấu <img src="../anh/star.png" alt="" class="sao"></h2>
+                           </div>
+
+                           </div>
+
+                           <div class="col-md-6">
+                                <div class="dangdoc">
+                                        <h3>Đang Đọc <img src="../anh/iconfinder__shooting_star_1679651.svg" alt=""> </h3>
+                                      <select name="" id="doc">
+                                      <option value="">Phong Thần Bảng</option>
+                                      <option value="">Tấm Cám</option>
+                                    </select>
+                                </div>
+                           </div>
+                           <div class="col-md-6">
+                                <div class="moicapnhat">
+                                        <h3>Mới Cập Nhật <img src="../anh/iconfinder__shooting_star_1679651.svg" alt=" " > </h3>
+                                        <select name="" id="moicn">
+                                            
+                                            <option value="">Ta Là Chí Tôn</option>
+                                            <option value="">Ngày Tàn Của Thế Giới</option>
+                                        </select>
+                                </div>
+                           </div>
+
+                       
+                       
+                       <div class="col-md-12">
+                           <div class="lk">
+                            <h3>Liệt Kê Theo Tác Giả <img src="../anh/star.png" alt=""></h3>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="noidung4">
+                                        <div class="icon"><img src="../anh/writer.png" alt=""></div>
+                                        <div class="tentg">
+                                                <ul>
+                                                        <li> <a href="tacgia.html">Nhật Hòang <span class="badge">18</span> </a> </li>
+                                                        
+                                                        
+                                                       
+                                                    </ul>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="noidung4">
+                                        <div class="icon"><img src="../anh/writer.png" alt=""></div>
+                                        <div class="tentg">
+                                                <ul>
+                                                        <li> <a href="tacgia.html">Ý Tiên <span class="badge">20</span> </a> </li>
+                                                        
+                                                        
+                                                       
+                                                </ul>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            
+                            <div class="noidung5">
+                                    <div class="icon"><img src="../anh/writer.png" alt=""></div>
+                                    <div class="tentg">
+                                            <ul>
+                                                    <li> <a href="tacgia.html">Như Thiên <span class="badge">18</span> </a> </li>
+                                                    
+                                                    
+                                                   
+                                                </ul>
+                                    </div>
+                                </div>
+                    </div> 
+                     <div class="col-md-6">
+                            <div class="noidung5m">
+                                    <div class="icon"><img src="../anh/writer.png" alt=""></div>
+                                    <div class="tentg">
+                                            <ul>
+                                                    <li> <a href="tacgia.html">Ý Thần <span class="badge">19</span> </a> </li>
+                                                    
+                                                    
+                                                   
+                                                </ul>
+                                    </div>
+                                </div>
+                    </div> 
+                        
+
+
+                </div>
+
+                       
+                       
+                       
+            </div>
+    </div>
+
+           </section>
+           <section class="side">
+                <div class="container-fluid">
+ 
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+                              <div class="carousel-inner">
+                       
+                                <div class="item active">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/annie.jpeg" class="img-responsive center-block"></a>
+                                    
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                       
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/aurelionsol.jpeg" class="img-responsive center-block"></a>
+                                    
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                       
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/fizz.jpeg" class="img-responsive center-block"></a>
+                                   
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                       
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/Ahri.jpeg" class="img-responsive center-block"></a>
+                                    
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                       
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/janna.jpeg" class="img-responsive center-block"></a>
+                                    
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                       
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/aurelionsol.jpeg" class="img-responsive center-block"></a>
+                                    
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/aurelionsol.jpeg" class="img-responsive center-block"></a>
+                                    
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                                  <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/aurelionsol.jpeg" class="img-responsive center-block"></a>
+                                   
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/aurelionsol.jpeg" class="img-responsive center-block"></a>
+                                    
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <div class="col-xs-12 col-sm-6 col-md-2">
+                                    <a href="truyen.html"><img src="../anh/aurelionsol.jpeg" class="img-responsive center-block"></a>
+                                  
+                                    <div id="chitiet">Chi tiết</div>
+                                  </div>
+                                </div>
+                              </div>
+                      <!-- left,right control -->
+                              <div id="slider-control">
+                              <a class="left carousel-control" href="#itemslider" data-slide="prev"><img src="../anh/iconfinder_icon-ios7-arrow-left_211689.svg" alt="Left" class="img-responsive" ></a>
+                              <a class="right carousel-control" href="#itemslider" data-slide="next"><img src="../anh/iconfinder_icon-ios7-arrow-right_211607.svg" alt="Right" class="img-responsive" ></a>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+           </section>
+           <section class="moinhat">
+               <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="td-moi">Mới Nhất</div>
+
+                    </div>
+
+
+                       
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"><img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Cuồng Huyết Thiên Ma</a>
+                                        <a href="tacgia.html" class="tentg">Hư Không </a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Truyện nổi bật nhờ vào khả năng khắc họa tâm lí nhân vật ,khả năng giao tiếp giữa nhân vật với người...</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+
+                    </div>
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"><img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Tuyệt Đỉnh Đan Tôn (Dịch)</a>
+                                        <a href="tacgia.html" class="tentg">Vạn Cổ Thanh Liên </a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Bộ đầu tiên ta tu luyện là thần đạo đan tôn cho nên ta muốn đọc lại một bộ về đan đạo và tình cờ .....</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"><img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Hệ Thống Game Tại Dị Giới</a>
+                                        <a href="tacgia.html" class="tentg">Tạ Trường Thành </a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Truyện xuyên không, hệ thống. đọc khá là hài hước và cuốn hút. Thêm nữa nó lại còn miễn phí, tại ..</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"> <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Niệm Tiên Quyết</a>
+                                        <a href="tacgia.html" class="tentg">Thông Vạn Vật</a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Thể loại tiên hiệp kèm sắc a~ nên đọc nên đọc, đã bao giờ các đh thấy tu tiên chỉ bằng niệm lực...</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+                            </div>            
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html"> <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Võng Du Tranh Bá Yriel Đại Lục</a>
+                                                    <a href="tacgia.html" class="tentg">Tử Lôi</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">51,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">1,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Tại hạ hiện này đang thích đọc các loại truyện võng du, nay tìm kiếm được bộ này cũng giúp cho tạ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">    <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Thần Cấp Đại Ma Đầu</a>
+                                                    <a href="tacgia.html" class="tentg">Long Miêu</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,20 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,53 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Truyện hay, tình huống lôi cuốn, đáng để đọc..</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html"> <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Lưu Manh Thần Châm</a>
+                                                    <a href="tacgia.html" class="tentg">Chu Đình Hạ Bình</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Giới thiệu tóm tắt: Gia gia trước khi mất dặn dò, Chu Đình nhận Tổ Truyền y thuật châm cứu, ......</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">   <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Tuyệt Đỉnh Đan Tôn (Dịch)</a>
+                                                    <a href="tacgia.html" class="tentg">Như Long</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Truyện hay dành cho các đạo hữu đam mê " thảo dược" luyện chế đan dược. Main trùng sinh nên có ki...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">   <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Sư Đệ Của Ta Là Cửu Gia</a>
+                                                    <a href="tacgia.html" class="tentg">Vương Dương Quang</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Dương Phong Xuyên Không và có được hệ thống Thiên Sư, bắt đầu hành trình trừ ma vệ đạo. Truyện ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">  <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html"> Hoàng Tử Muốn Trời Cao</a>
+                                                    <a href="tacgia.html" class="tentg">Thập Lí Trường An Nhai</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Ôn Như Ngôn mạc danh xuyên qua đến một cái không tồn tại với trong lịch sử triều đại, lại ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">   <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Long Mạch Võ Thần</a>
+                                                    <a href="tacgia.html" class="tentg">Thiện Kiếm</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Cửu Long đại lục, võ giả vi tôn, lấy huyết mạch quyết định nhất sinh thành liền! Chán nản thế ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">  <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Ngạo Thế Đan Thần (Dịch)</a>
+                                                    <a href="tacgia.html" class="tentg">Tịch Tiểu Tặc</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Truyện càng đọc càng lôi cuốn, nhiều lúc cười không nhặt được mồm, đọc dễ bị lôi cuốn ở cảnh đối thoại mập mờ với các nhân vật nữ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                    
+                </div>
+
+                   
+               </div>
+
+           </section>
+           <section class="moinhat">
+               <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="td-moi">Đang HOT</div>
+
+                    </div>
+
+
+                       
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"><img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Cuồng Huyết Thiên Ma</a>
+                                        <a href="tacgia.html" class="tentg">Hư Không </a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Truyện nổi bật nhờ vào khả năng khắc họa tâm lí nhân vật ,khả năng giao tiếp giữa nhân vật với người...</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+
+                    </div>
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"><img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Tuyệt Đỉnh Đan Tôn (Dịch)</a>
+                                        <a href="tacgia.html" class="tentg">Vạn Cổ Thanh Liên </a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Bộ đầu tiên ta tu luyện là thần đạo đan tôn cho nên ta muốn đọc lại một bộ về đan đạo và tình cờ .....</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"><img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Hệ Thống Game Tại Dị Giới</a>
+                                        <a href="tacgia.html" class="tentg">Tạ Trường Thành </a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Truyện xuyên không, hệ thống. đọc khá là hài hước và cuốn hút. Thêm nữa nó lại còn miễn phí, tại ..</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-md-3">
+                            <div class="chinh1">
+                                
+                                    <div class="trai2">
+                                            <a href="truyen.html"> <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="phai2">
+                                        <a class="tentr" href="truyen.html">Niệm Tiên Quyết</a>
+                                        <a href="tacgia.html" class="tentg">Thông Vạn Vật</a>
+                                        <div class="thongtin">
+                                            <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                        <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                        </div>
+                                        
+                                           
+                                            <p class="tr">Thể loại tiên hiệp kèm sắc a~ nên đọc nên đọc, đã bao giờ các đh thấy tu tiên chỉ bằng niệm lực...</p>
+                                        
+                                       
+                                    </div>
+                                </div>
+                            </div>            
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html"> <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Võng Du Tranh Bá Yriel Đại Lục</a>
+                                                    <a href="tacgia.html" class="tentg">Tử Lôi</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">51,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">1,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Tại hạ hiện này đang thích đọc các loại truyện võng du, nay tìm kiếm được bộ này cũng giúp cho tạ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">    <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Thần Cấp Đại Ma Đầu</a>
+                                                    <a href="tacgia.html" class="tentg">Long Miêu</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,20 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,53 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Truyện hay, tình huống lôi cuốn, đáng để đọc..</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html"> <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""></a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Lưu Manh Thần Châm</a>
+                                                    <a href="tacgia.html" class="tentg">Chu Đình Hạ Bình</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Giới thiệu tóm tắt: Gia gia trước khi mất dặn dò, Chu Đình nhận Tổ Truyền y thuật châm cứu, ......</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">   <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Tuyệt Đỉnh Đan Tôn (Dịch)</a>
+                                                    <a href="tacgia.html" class="tentg">Như Long</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Truyện hay dành cho các đạo hữu đam mê " thảo dược" luyện chế đan dược. Main trùng sinh nên có ki...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">   <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Sư Đệ Của Ta Là Cửu Gia</a>
+                                                    <a href="tacgia.html" class="tentg">Vương Dương Quang</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Dương Phong Xuyên Không và có được hệ thống Thiên Sư, bắt đầu hành trình trừ ma vệ đạo. Truyện ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">  <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html"> Hoàng Tử Muốn Trời Cao</a>
+                                                    <a href="tacgia.html" class="tentg">Thập Lí Trường An Nhai</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Ôn Như Ngôn mạc danh xuyên qua đến một cái không tồn tại với trong lịch sử triều đại, lại ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">   <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Long Mạch Võ Thần</a>
+                                                    <a href="tacgia.html" class="tentg">Thiện Kiếm</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Cửu Long đại lục, võ giả vi tôn, lấy huyết mạch quyết định nhất sinh thành liền! Chán nản thế ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="col-md-3">
+                                        <div class="chinh1">
+                                
+                                                <div class="trai2">
+                                                        <a href="truyen.html">  <img class="anh" src="../anh/aurelionsoll.jpeg" alt=""> </a>
+                                                </div>
+                                                <div class="phai2">
+                                                    <a class="tentr" href="truyen.html">Ngạo Thế Đan Thần (Dịch)</a>
+                                                    <a href="tacgia.html" class="tentg">Tịch Tiểu Tặc</a>
+                                                    <div class="thongtin">
+                                                        <span class="sochu">551,220 <span class="tru">Chữ</span> </span>
+                                                    <span class="sochu1">10,593 <span class="tru1">Đọc</span> </span>
+                                                    </div>
+                                                    
+                                                       
+                                                        <p class="tr">Truyện càng đọc càng lôi cuốn, nhiều lúc cười không nhặt được mồm, đọc dễ bị lôi cuốn ở cảnh đối thoại mập mờ với các nhân vật nữ...</p>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                </div>
+                    
+                </div>
+
+                   
+               </div>
+
+           </section>
+           <section class="cuoi">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-4">
+                            <div class="gioithieu">
+                                    <h4>Giới Thiệu</h4>
+                                    <hr>
+                                    <p>  website đọc Truyện H-T online cập nhật liên tục và nhanh nhất các truyện tiên hiệp, kiếm hiệp, huyền ảo được các thành viên liên tục đóng góp rất nhiều truyện hay và nổi bật.</p>
+                                </div>
+                       </div>
+                       <div class="col-md-4">
+                            <div class="ht">
+                                    <h4>Hỗ Trợ</h4>
+                                    <hr>
+                                  
+                                        <div class="ungdung">
+                                                <a href="truyen.html"><i class="fa fa-mobile" aria-hidden="true"></i> </a>
+                                                <span>Ứng Dụng</span>
+                                        </div>
+                                        <div class="ungdung1">
+                                                <a href="truyen.html"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
+                                                <span> Báo lỗi ứng dụng</span>
+                                        </div>
+                                        <div class="ungdung2">
+                                                <a href="truyen.html"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                                                <span>FAQs</span>
+                                        </div>
+                                    
+                                   
+                                    
+                                  
+                                </div>
+                       </div>
+                       <div class="col-md-4">
+
+                            <div class="lh">
+                                    <h4>Liên hệ quảng cáo</h4>
+                                    <hr>
+                                    <div class="nd-lh">
+                                        
+                                    <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                                        <span>Email:nhathoang3518@gmail.com</span>
+                                        </div>
+                                    <div class="nd-lh1">
+                                        
+                                    <a href=""><i class="fa fa-mobile" aria-hidden="true"></i></a>
+                                    <span>Phone:0889554225</span>
+                                        </div>
+                                    <div class="nd-lh2">
+                                        
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <span>Facebook:nhathoang3518</span> 
+                                        </div>
+                                            
+                                       
+                                   
+                                        <div onclick="topFunction()" id="myBtn" title="Go to top"><img  class="anhcuoi" src="../anh/iconfinder_icon_set_outlinder-04_2519697.svg" alt=""></div>
+                                   </div>
+                                   
+                                   
+                                  
+                       </div>
+                       
+                   </div>
+               </div>
+               
+
+           </section>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+       <%# <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  %>
+
+      <%# <%= javascript_pack_tag 'jquery-3.6.0.min' %> 
+      <%# <%= javascript_pack_tag 'back-on-top' %>  
+     
+
+    <%# <%= javascript_pack_tag 'menuhk' %>  
+    <%# <%= javascript_pack_tag 'top' %>   
+    <%# <%= javascript_pack_tag 'chaomung' %>  
+    <%# <%= javascript_pack_tag 'ngaythang' %>  
+    <%# <%= javascript_pack_tag 'demnam' %>   
+    <%# <%= javascript_pack_tag 'side'  %>   
+    <%# <%= javascript_pack_tag 'menuhk' %>   
+    
+     
+
+    <script src="../JS/jquery-3.6.0.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../JS/back-on-top.js"></script>
+    <script src="../JS/menuhk.js"></script>
+    <script src="../JS/top.js"></script>
+    <script src="../JS/chaomung.js"></script>
+    <script src="../JS/ngaythang.js"></script>
+    <script  type="text/javascript" src="../JS/demnam.js"></script>
+    <script type="text/javascript" src="../JS/side.js"></script>
+    <script src="../JS/menuhk.js"></script> 
+</body>
+</html>

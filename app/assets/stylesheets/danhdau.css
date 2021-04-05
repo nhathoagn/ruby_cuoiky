@@ -1,0 +1,26 @@
+
+.moicapnhat{
+    width: 119%;
+}
+
+
+#doc ,#moicn{
+    height: 36px;
+    border-radius: 10px;
+}
+
+h3{
+     padding-top: 1%;
+    font-size: 124%;
+}
+#moicn{
+    margin-left: -1%;
+    margin-top: -4%;
+    margin-bottom: 9%;
+}
+.dangdoc img{
+    width: 18%;
+}
+.moicapnhat img{
+    width: 18%;
+}

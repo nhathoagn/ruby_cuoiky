@@ -1,0 +1,59 @@
+
+.lk h3{
+  font-size: 150%;
+  position: relative;
+  left: 26%;
+}
+.noidung4 ul ,.noidung5 ul,.noidung5m ul{
+    list-style: none;
+    margin-top: 12%;
+    margin-left: -41%;
+    width: 164%;
+}
+.noidung4 a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.noidung4{
+    display: flex;
+}
+.noidung5{
+    display: flex;
+    
+}
+.noidung5m{
+    display: flex;
+    
+}
+.noidung5m{
+    margin-top: -26%;
+}
+ .noidung4 img{
+    
+    height: 27%;
+} 
+.noidung4 li{
+    margin-left: 7%;
+}
+.noidung5 ul{
+    margin-top: 18%;
+}
+.noidung5 img{
+    
+    height: 27%;
+} 
+.noidung5m img{
+    
+    height: 27%;
+} 
+.noidung5 li{
+    margin-left: 7%;
+}
+.tentg{
+    margin-top: -9%;
+}
+
+.badge{
+    background-color: bisque;
+    border-radius: 35%;
+}

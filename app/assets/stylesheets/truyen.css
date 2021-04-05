@@ -1,0 +1,72 @@
+.tren img{
+  
+    width: 1%;
+}
+.tren span{
+    margin-top: 2%;
+    margin-left: 8%;
+    display: block;
+}
+.doc img{
+    margin-top: 20%;
+}
+#tentr{
+    margin-top: 12%;
+    margin-left: 3%;
+    width: 100%;
+}
+.doc{
+    display: flex;;
+}
+#tentg,#tl,#ttr{
+    margin-left: 3%;
+    font-size: 90%;
+    margin-bottom: 10%;
+}
+.btn{
+    margin-left: 3%;
+    width: 35%;
+   
+}
+#sao{
+    width: 8%;
+}
+#danhgia{
+    margin-top: 13%;
+    margin-left: 6%;
+}
+#ngdanhgia {
+    font-size: 78%;
+}
+
+
+.luachon{
+    list-style: none;
+    display: inline-flex;
+    width: 100%;
+   
+} 
+.luachon a{
+    text-decoration: none;
+    color: rgb(24, 214, 228);    
+}
+.luachon  li{
+    margin-right: 3%;  
+}
+.noidungg{
+    margin-left: 3%;
+}
+.nguoiviet{
+    width: 18%;
+}
+.ngaytruoc{
+margin-left: 50%;
+margin-top: 5%;
+display: block;
+}
+.giuaa{
+    margin-left: 3%;
+    margin-top: 5%;
+display: block;
+   
+}

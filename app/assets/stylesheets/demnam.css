@@ -1,0 +1,11 @@
+#gio,#phut,#giay{
+    color:black;
+    display: block;
+    font-size:100%;
+    
+    margin-left: 3%
+}
+.time{
+    display: inline-flex;
+    margin-top: 45%;
+}

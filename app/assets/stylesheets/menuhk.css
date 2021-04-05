@@ -1,0 +1,35 @@
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    margin-left: 3px;
+    padding-left: 3px;
+
+}
+.menu a{
+    font-size: 17px;
+}
+.muc1{
+    width: 105%;
+}
+.muc2{
+    position: relative;
+    z-index: 9999;
+}
+ .layer2{
+    position: absolute;
+   
+    opacity: 0;
+    
+    transition: 0.4s;
+    width: 149px;
+    background-color:#343a40;
+}
+ .muc2 .layer2:hover{
+    opacity: 1;
+
+}  
+.menu .row{
+    background-color: gainsboro;
+    border-radius: 4px;
+}

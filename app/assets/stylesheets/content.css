@@ -1,0 +1,129 @@
+
+.trai{
+    border: 1px solid gray;
+    height: 100%;
+ 
+
+    background-color: #cec9c96e;
+    border-radius: 6%;
+ 
+    
+
+    
+}
+.trai .chu{
+    width: 123%;
+}
+ .trai .docnhieu {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.trai li{
+    list-style: none;
+  
+    padding-left: 18%;
+    margin-top: 6%;
+    
+   
+    
+}
+.trai a{
+    
+    text-decoration: none;
+    color: #000;
+    margin-top: 1%;
+    font-size: 155%;
+ 
+}
+.sao{
+  display: inline-flex;
+    
+}
+.sao1{
+    margin-left: -30%;
+}
+.trai ul li :hover{
+  margin-left: 1%;
+  transition: 0.4s;
+  text-decoration: none;
+  color: #000;
+}
+
+.trai .docnhieu{
+  text-align: center;
+}
+.trai ul{
+    margin-top: -6%;
+    margin-left: -2%
+}
+.giua{
+    
+    position: relative;
+    
+    transition: 0.2s;
+
+}
+#carouselId{
+    width: 100%;
+    height: 101%;
+}
+
+.phai{
+    border: 1px solid gray;
+    z-index: 888;
+    height: 100%;
+
+
+    background-color: #cec9c96e;
+    border-radius: 6%;
+    position: relative;
+  
+}
+ .phai .moinhat {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.phai li{
+    list-style: none;
+  
+   padding-top: 8%;
+    
+   
+    
+}
+.phai a{
+    
+    text-decoration: none;
+    color: #000;
+    margin-top: 1%;
+    font-size: 155%;
+ 
+}
+.phai ul li :hover{
+  margin-left: -1%;
+  transition: 0.4s;
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.phai .moinhat{
+  text-align: center;
+}
+.phai ul{
+    margin-top: -8%;
+    margin-left: 14%;
+}
+.trai h2,.phai h2{
+    font-size: 30px;
+    
+}
+
+.mau{
+    height: 200px;
+    background-color: blue;
+}
+.decu{
+    border-bottom: 1px solid;
+    width: 8%;
+    font-size: 176%;
+    margin-left: 2%;
+}

@@ -1,0 +1,108 @@
+.dauu{
+    display: flex;
+}
+.atg img{
+    height: 100%;
+    margin-top: 10%;
+    width: 70%;
+    
+}
+.tttg{
+    margin-top: 10%;
+    line-height: 35px;
+}
+#danhgiaa{
+    margin-top: 13%;
+    margin-left: 6%;
+}
+#ngdanhgiaa {
+    font-size: 78%;
+}
+.danhgiapp{
+    margin-left: 30%;
+    margin-top: 3%;
+}
+.tren1 img{
+  
+    width: 1%;
+}
+.tren1 span{
+    margin-top: 2%;
+    margin-left: 8%;
+    display: block;
+}
+.tren1{
+   font-size: 21px;
+}
+
+
+
+
+
+.chinh11 a{
+    text-decoration: none;
+    margin-top: 3%;
+}
+.chinh11{
+  
+    height: 27%;
+    display: flex;
+    margin-top: 17%;
+    padding-bottom: 1%;
+    margin-left: 2%;
+    position: relative;
+    left: 19%;
+    width: 110%;
+   
+}
+.phai22{
+    margin-left: 2%;
+    height: 41%;
+    margin-top: -3%;
+    width: 100%;
+
+}
+
+.tentrr{
+    color: #000;
+    display: block;
+}
+.tentgg{
+    color: #000;
+}
+.truu, .tru11{
+    font-size: 55%;
+}
+.sochu ,.tru{
+    color: red;
+}
+.sochu11 ,.tru11{
+ color: #4497f8;
+}
+.phai22 p{
+    font-size: 70%;
+    position: relative;
+    top: 2%;
+}
+ p:before{
+    content: "\f10d";
+    font: normal normal normal 14px/1 FontAwesome;
+   
+}
+.trai22 img{
+    border-radius: 10%;
+  
+}
+.trai22:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.td-moii{
+    margin-left: 2%;
+  
+    font-size: 176%;
+    margin-bottom: 2%;
+  
+    width: 12%;
+    border-bottom: 1px solid;
+}

@@ -1,0 +1,66 @@
+
+.chinh1 a{
+    text-decoration: none;
+    margin-top: 3%;
+}
+.chinh1{
+  
+    height: 27%;
+    display: flex;
+    margin-top: 17%;
+    padding-bottom: 1%;
+    margin-left: 2%;
+    position: relative;
+    left: 19%;
+    width: 100%;
+   
+}
+.phai2{
+    margin-left: 2%;
+    height: 41%;
+
+}
+
+.tentr{
+    color: #000;
+    display: block;
+}
+.tentg{
+    color: #000;
+}
+.tru, .tru1{
+    font-size: 55%;
+}
+.sochu ,.tru{
+    color: red;
+}
+.sochu1 ,.tru1{
+ color: #4497f8;
+}
+.phai2 p{
+    font-size: 70%;
+    position: relative;
+    top: 2%;
+}
+ p:before{
+    content: "\f10d";
+    font: normal normal normal 14px/1 FontAwesome;
+   
+}
+.trai2 img{
+    border-radius: 10%;
+  
+}
+.trai2:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.td-moi{
+    margin-left: 2%;
+  
+    font-size: 176%;
+    margin-bottom: 2%;
+  
+    width: 12%;
+    border-bottom: 1px solid;
+}

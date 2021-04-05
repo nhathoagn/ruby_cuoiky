@@ -1,0 +1,57 @@
+#mp,#qc,#tk,#kho,#nn,#cn{
+    border: 1px solid#357ebd;
+    height: 100%;
+    border-radius: 4px;
+    line-height: 1.42857143;
+    padding: 6px 12px;
+   
+}
+.duoii{
+    margin-top: 3%;
+}
+.trenn{
+    margin-left: 12%;
+    margin-top: 4%;
+}
+ .doc1 img {
+    width: 50%;
+    margin-top: 20%;
+    
+}
+
+.doc3 img{
+    width: 50%;
+    margin-left: 35%;
+}
+.hinhanh{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.tdd{
+    margin-top: 3%;
+}
+.tddd{
+    margin-top: 28%;
+}
+.tddd span{
+    margin-left: 3%;
+    
+}
+.doc4{
+    margin-top: 3%;
+    margin-top: 20%;
+}
+.doc5{
+     margin-top: 3%;
+     margin-left: 35%;
+     
+}
+
+.cuoii{
+    margin-top: 40%;
+    
+}
+.cuoii p{
+    margin-left: 3%;
+}
